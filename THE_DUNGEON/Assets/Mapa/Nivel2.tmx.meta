@@ -1,0 +1,67 @@
+fileFormatVersion: 2
+guid: f02ac430b1a9d9b4f8807a6ca2995061
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: _MapPrfab/Nivel2
+    100002: _MapPrfab/Nivel2/Grid
+    100004: _MapPrfab/Nivel2/Grid/Colision
+    100006: _MapPrfab/Nivel2/Grid/decoracion
+    100008: _MapPrfab/Nivel2/Grid/especial
+    100010: _MapPrfab/Nivel2/Grid/pared
+    100012: _MapPrfab/Nivel2/Grid/piso
+    100014: _MapPrfab/Nivel2/Grid/Colision/Object_2
+    400000: _MapPrfab/Nivel2/Transform
+    400002: _MapPrfab/Nivel2/Grid/Transform
+    400004: _MapPrfab/Nivel2/Grid/Colision/Transform
+    400006: _MapPrfab/Nivel2/Grid/decoracion/Transform
+    400008: _MapPrfab/Nivel2/Grid/especial/Transform
+    400010: _MapPrfab/Nivel2/Grid/pared/Transform
+    400012: _MapPrfab/Nivel2/Grid/piso/Transform
+    400014: _MapPrfab/Nivel2/Grid/Colision/Object_2/Transform
+    6800000: _MapPrfab/Nivel2/Grid/Colision/Object_2/EdgeCollider2D
+    11400000: _MapPrfab/Nivel2/MonoBehaviour-SuperTiled2Unity.SuperMap
+    11400002: _MapPrfab/Nivel2/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400004: _MapPrfab/Nivel2/Grid/Colision/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
+    11400006: _MapPrfab/Nivel2/Grid/Colision/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400008: _superAsset
+    11400010: _MapPrfab/Nivel2/Grid/decoracion/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400012: _MapPrfab/Nivel2/Grid/decoracion/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400014: _MapPrfab/Nivel2/Grid/especial/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400016: _MapPrfab/Nivel2/Grid/especial/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400018: _MapPrfab/Nivel2/Grid/pared/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400020: _MapPrfab/Nivel2/Grid/pared/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400022: _MapPrfab/Nivel2/Grid/piso/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400024: _MapPrfab/Nivel2/Grid/piso/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400026: _MapPrfab/Nivel2/Grid/Colision/Object_2/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400028: _MapPrfab/Nivel2/Grid/Colision/Object_2/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400030: _MapPrfab/Nivel2/Grid/Colision/Object_2/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    100100000: _MapPrfab
+    2569400265252428796: _MapPrfab/Nivel2/Grid/Grid
+    3664157343022684178: _MapPrfab/Nivel2/Grid/decoracion/TilemapRenderer
+    3664157343022684180: _MapPrfab/Nivel2/Grid/especial/TilemapRenderer
+    3664157343022684182: _MapPrfab/Nivel2/Grid/pared/TilemapRenderer
+    3664157343022684184: _MapPrfab/Nivel2/Grid/piso/TilemapRenderer
+    8195094279510102544: _MapPrfab/Nivel2/Grid/decoracion/Tilemap
+    8195094279510102546: _MapPrfab/Nivel2/Grid/especial/Tilemap
+    8195094279510102548: _MapPrfab/Nivel2/Grid/pared/Tilemap
+    8195094279510102550: _MapPrfab/Nivel2/Grid/piso/Tilemap
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
+  missingFiles: []
+  errors: []
+  warnings: []
+  missingSortingLayers: []
+  missingLayers: []
+  missingTags: []
+  importerVersion: 16
+  pixelsPerUnit: 100
+  edgesPerEllipse: 32
+  numberOfObjectsImported: 2
+  tilesAsObjects: 0
+  sortingMode: 0
+  isIsometric: 0
+  customImporterClassName: 
+  internalTilesets: []
