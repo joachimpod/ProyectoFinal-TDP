@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    [Tooltip("Velocidad de movimiento en unidades del mundo")]
     public float speed;
 
-    protected GameObject player;   // Recuperamos al objeto jugador
-    protected Rigidbody2D rb2d;    // Recuperamos el componente de cuerpo rígido
-    protected Vector3 target, dir; // Vectores para almacenar el objetivo y su dirección
+    protected GameObject player;   
+    protected Rigidbody2D rb2d;    
+    protected Vector3 target, dir; 
 
     void Start()
     {
@@ -26,7 +25,7 @@ public class Ball : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Si hay un objetivo movemos la roca hacia su posición
+        // Si hay un objetivo movemos el proyectil hacia su posición
         if (target != Vector3.zero)
         {
             rb2d.MovePosition(transform.position + (dir * speed) * Time.deltaTime);
@@ -54,7 +53,7 @@ public class Ball : MonoBehaviour
 
     void OnBecameInvisible()
     {
-        // Si se sale de la pantalla borramos la roca
+        // Si se sale de la pantalla borramos el proyectil
         Destroy(gameObject);
     }
 }
