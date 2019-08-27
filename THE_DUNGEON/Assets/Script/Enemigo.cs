@@ -83,12 +83,9 @@ public class Enemigo : MonoBehaviour
             player.transform.position - transform.position,
             visionRadius,
             1 << LayerMask.NameToLayer("Default")
-        // Poner el propio Enemy en una layer distinta a Default para evitar el raycast
-        // También poner al objeto Attack y al Prefab Slash una Layer Attack 
-        // Sino los detectará como entorno y se mueve atrás al hacer ataques
         );
 
-        // Aquí podemos debugear el Raycast
+        // debugear el Raycast
         forward = transform.TransformDirection(player.transform.position - transform.position);
         Debug.DrawRay(transform.position, forward, Color.red);
 
@@ -104,12 +101,11 @@ public class Enemigo : MonoBehaviour
         // Calculamos la distancia y dirección actual hasta el target
         distance = Vector3.Distance(target, transform.position);
         dir = (target - transform.position).normalized;
-        // Si es el enemigo y está en rango de ataque nos paramos y le atacamos
+        
         if (target != initialPosition && distance <= attackRadius && !attacking)
         {
             atacar(dir);
         }
-        // En caso contrario nos movemos hacia él
         else
         {
                 if (!attacking)
@@ -129,7 +125,6 @@ public class Enemigo : MonoBehaviour
         if (target == initialPosition && distance < 0.05f)
         {
             transform.position = initialPosition;
-            // Y cambiamos la animación de nuevo a Idle
             anim.SetBool("caminando", false);
         }
         if (distance > visionRadius)
@@ -138,7 +133,6 @@ public class Enemigo : MonoBehaviour
             actualizarVida();
         }
 
-            // Y un debug optativo con una línea hasta el target
             Debug.DrawLine(transform.position, target, Color.green);
     }
     protected void atacar(Vector3 dir)
@@ -146,7 +140,6 @@ public class Enemigo : MonoBehaviour
         anim.SetFloat("movX", dir.x);
         anim.SetFloat("movY", dir.y);
         anim.Play("Enemigo_Attack");
-        ///-- Empezamos a atacar (importante una Layer en ataque para evitar Raycast)
 
         StartCoroutine(Attack(attackSpeed));
     }
