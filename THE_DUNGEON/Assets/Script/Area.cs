@@ -7,7 +7,6 @@ public class Area : MonoBehaviour
 {
 
     protected Animator anim;
-    // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
