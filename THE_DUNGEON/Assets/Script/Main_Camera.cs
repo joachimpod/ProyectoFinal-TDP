@@ -11,7 +11,6 @@ public class Main_Camera : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.position = new Vector3(
